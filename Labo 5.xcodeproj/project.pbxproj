@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		74E5C3761AC09EAD00EE3BA2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 74E5C3751AC09EAD00EE3BA2 /* main.cpp */; };
 		74E5C3841AC09F7400EE3BA2 /* ComplexNumber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 74E5C3821AC09F7400EE3BA2 /* ComplexNumber.cpp */; };
+		74E5C38A1AC0C4EC00EE3BA2 /* IntArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 74E5C3881AC0C4EC00EE3BA2 /* IntArray.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		74E5C3751AC09EAD00EE3BA2 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		74E5C3821AC09F7400EE3BA2 /* ComplexNumber.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ComplexNumber.cpp; sourceTree = "<group>"; };
 		74E5C3831AC09F7400EE3BA2 /* ComplexNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComplexNumber.h; sourceTree = "<group>"; };
+		74E5C3881AC0C4EC00EE3BA2 /* IntArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IntArray.cpp; sourceTree = "<group>"; };
+		74E5C3891AC0C4EC00EE3BA2 /* IntArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntArray.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				74E5C3751AC09EAD00EE3BA2 /* main.cpp */,
 				74E5C3821AC09F7400EE3BA2 /* ComplexNumber.cpp */,
 				74E5C3831AC09F7400EE3BA2 /* ComplexNumber.h */,
+				74E5C3881AC0C4EC00EE3BA2 /* IntArray.cpp */,
+				74E5C3891AC0C4EC00EE3BA2 /* IntArray.h */,
 			);
 			path = "Labo 5";
 			sourceTree = "<group>";
@@ -123,6 +128,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74E5C38A1AC0C4EC00EE3BA2 /* IntArray.cpp in Sources */,
 				74E5C3761AC09EAD00EE3BA2 /* main.cpp in Sources */,
 				74E5C3841AC09F7400EE3BA2 /* ComplexNumber.cpp in Sources */,
 			);
@@ -241,6 +247,7 @@
 				74E5C37B1AC09EAD00EE3BA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
