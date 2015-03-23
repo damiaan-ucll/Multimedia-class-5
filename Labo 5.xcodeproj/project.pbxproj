@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		74E5C3761AC09EAD00EE3BA2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 74E5C3751AC09EAD00EE3BA2 /* main.cpp */; };
+		74E5C3841AC09F7400EE3BA2 /* ComplexNumber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 74E5C3821AC09F7400EE3BA2 /* ComplexNumber.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		74E5C3721AC09EAD00EE3BA2 /* Labo 5 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Labo 5"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E5C3751AC09EAD00EE3BA2 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		74E5C3821AC09F7400EE3BA2 /* ComplexNumber.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ComplexNumber.cpp; sourceTree = "<group>"; };
+		74E5C3831AC09F7400EE3BA2 /* ComplexNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComplexNumber.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				74E5C3751AC09EAD00EE3BA2 /* main.cpp */,
+				74E5C3821AC09F7400EE3BA2 /* ComplexNumber.cpp */,
+				74E5C3831AC09F7400EE3BA2 /* ComplexNumber.h */,
 			);
 			path = "Labo 5";
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74E5C3761AC09EAD00EE3BA2 /* main.cpp in Sources */,
+				74E5C3841AC09F7400EE3BA2 /* ComplexNumber.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
