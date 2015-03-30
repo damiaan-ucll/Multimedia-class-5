@@ -25,8 +25,8 @@ public:
 	ComplexNumber(const ComplexNumber &other);
 	ComplexNumber &operator = (const ComplexNumber &);
 	
-	double const getX() { return real; }
-	double const getY() { return imaginary; }
+	double getX() const { return real; }
+	double getY() const { return imaginary; }
 	
 	void setX(double x) { real = x; }
 	void setY(double y) { imaginary = y; }

@@ -64,10 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				74E5C3751AC09EAD00EE3BA2 /* main.cpp */,
-				74E5C3821AC09F7400EE3BA2 /* ComplexNumber.cpp */,
-				74E5C3831AC09F7400EE3BA2 /* ComplexNumber.h */,
 				74E5C3881AC0C4EC00EE3BA2 /* IntArray.cpp */,
 				74E5C3891AC0C4EC00EE3BA2 /* IntArray.h */,
+				74E5C3821AC09F7400EE3BA2 /* ComplexNumber.cpp */,
+				74E5C3831AC09F7400EE3BA2 /* ComplexNumber.h */,
 			);
 			path = "Labo 5";
 			sourceTree = "<group>";

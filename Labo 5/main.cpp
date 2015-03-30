@@ -25,7 +25,7 @@ void ex1() {
 	cout << z5 << endl;
 }
 
-void ex2() {
+void ex2e() {
 	IntArray a(6);
 	for (int i=0; i<6; ++i) {
 		a[i] = i*i;
@@ -40,9 +40,56 @@ void ex2() {
 	cout << b << endl;
 }
 
+void ex2j() {
+	IntArray a(6);
+	for(int i=0; i<6; ++i){
+		a[i] = i*i;
+	}
+	
+	IntArray c;
+	c = a;
+	cout << c << endl ;
+	c [0]=6;
+	cout << a << endl ;
+	cout << c << endl ;
+	c.resize (3);
+	cout << c << endl ;
+}
+
+void ex3(const IntArray list, const int number) {
+	bool listContains[number+1];
+	for (int i = 0; i<=number; ++i) listContains[i] =  false;
+	
+	
+	for (int i=0; i<list.getLength(); ++i) {
+		int x = list[i];
+		
+		bool relevant = x <= number;
+		
+		if (x <= number && !listContains[x] && listContains[number-x])
+			cout << x << " + " << number-x << " = " << number << endl;
+		if (relevant) listContains[x] = true;
+	}
+}
+
 int main(int argc, const char * argv[]) {
 
-	ex2();
+//	ex2e();
+	
+//	ex2j();
+	
+	IntArray lijst(7);
+	lijst[0] = 3;
+	lijst[1] = 7;
+	lijst[2] = 2;
+	lijst[3] = 9;
+	lijst[4] = 4;
+	lijst[5] = 3;
+	lijst[6] = 9;
+	
+	ex3(lijst, 11);
+	
+	IntArray lijst2 = lijst;
 	
     return 0;
 }
