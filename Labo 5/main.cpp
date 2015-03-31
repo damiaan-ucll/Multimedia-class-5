@@ -56,21 +56,22 @@ void ex2j() {
 	cout << c << endl ;
 }
 
-void ex3(const IntArray list, const int number) {
-	char listContains[min(100,number+1)];
-	for (int i = 0; i<=number; ++i) listContains[i] = 0;
+void ex3(const IntArray list, const int sum) {
+	char listContains[min(100,sum+1)];
+	for (int i = 0; i<=sum; ++i) listContains[i] = 0;
 	
 	
 	for (int i=0; i<list.getLength(); ++i) {
 		int &x = list[i];
+		int complement = sum-x;
 		
-		if (x <= number){
-			if (listContains[number-x]) {
+		if (x <= sum){
+			if (listContains[complement]) {
 				if (!listContains[x]) {
-					cout << x << " + " << number-x << " = " << number << endl;
+					cout << x << " + " << complement << " = " << sum << endl;
 				} else {
-					if (listContains[x] == 1 && x*2 == number)
-						cout << x << " + " << x << " = " << number << endl;
+					if (listContains[x] == 1 && x*2 == sum)
+						cout << x << " + " << x << " = " << sum << endl;
 					listContains[x] = 2;
 				}
 			}
