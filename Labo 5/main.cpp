@@ -57,26 +57,27 @@ void ex2j() {
 }
 
 void ex3(const IntArray list, const int number) {
-	char listContains[min(99,number+1)];
+	char listContains[min(100,number+1)];
 	for (int i = 0; i<=number; ++i) listContains[i] = 0;
 	
 	
 	for (int i=0; i<list.getLength(); ++i) {
-		int x = list[i];
+		int &x = list[i];
 		
-		bool relevant = x <= number;
-		
-		if (relevant && listContains[number-x]){
-			if (!listContains[x]) {
-				cout << x << " + " << number-x << " = " << number << endl;
-			} else {
-				if (listContains[x] == 1 && x*2 == number)
-					cout << x << " + " << x << " = " << number << endl;
-				listContains[x] = 2;
+		if (x <= number){
+			if (listContains[number-x]) {
+				if (!listContains[x]) {
+					cout << x << " + " << number-x << " = " << number << endl;
+				} else {
+					if (listContains[x] == 1 && x*2 == number)
+						cout << x << " + " << x << " = " << number << endl;
+					listContains[x] = 2;
+				}
 			}
+			
+			listContains[x] = listContains[x] | 1;
 		}
 		
-		if (relevant) listContains[x] = listContains[x] | 1;
 	}
 }
 
@@ -90,12 +91,12 @@ int main(int argc, const char * argv[]) {
 	lijst[0] = 3;
 	lijst[1] = 7;
 	lijst[2] = 2;
-	lijst[3] = 3;
+	lijst[3] = 9;
 	lijst[4] = 4;
 	lijst[5] = 3;
 	lijst[6] = 9;
 	
-	ex3(lijst, 6);
+	ex3(lijst, 11);
 		
     return 0;
 }
